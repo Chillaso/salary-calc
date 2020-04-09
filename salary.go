@@ -18,6 +18,7 @@ var (
 
 func main() {
 
+	fmt.Println("\x1b[4m", "===== Visit https://www2.agenciatributaria.gob.es/wlpl/PRET-R200/index.zul to calc your right IRPF retention ====", "\x1b[0m")
 	defineFlags()
 	checkFlags()
 	salary, irpf, pays := parseFlags()
