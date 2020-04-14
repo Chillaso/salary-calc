@@ -2,34 +2,18 @@
 This is a very basic app which let you calc your salary in Spain.
 
 ## Requirements
-### Node
-First, we are going to install nvm, it'll let us install and manage node as simply as possible. Take care of nvm version. You can check the latest version [here](https://github.com/nvm-sh/nvm)
-```shell
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-```
-then close your terminal or source your shell config and run
-```shell
-nvm install --lts
-```
-Update npm
-```shell
-npm install npm@latest -g
-```
-## Download and install
-Clone repo and just run it like this:
-```shell
-git clone https://github.com/Chillaso/salary-calc.git && \
-cd salary-calc && \
-node index.js
-```
+* Go
+* Know your salary
+
 ## Usage
 Now for usage just simply, where salary is your gross salary and irpf is your retention percentage:
 ```shell
-node index.js --salary 20000 --irpf 20.20
+go build salary.go
+./salary --salary 20000 --irpf 20.20
 ```
 or
 ```shell
-node index.js --salary 20000 --irpf 20.20 --pays 14
+./salary --salary 20000 --irpf 20.20 --pays 14
 ```
 ## Business Logic
 Basically we get your gross salary and multiply by two constants:
